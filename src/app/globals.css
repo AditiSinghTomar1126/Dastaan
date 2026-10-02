@@ -1,0 +1,238 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+•⁠  * {
+  box-sizing: border-box;
+}
+@layer base {
+  html {
+    width: 100%;
+      overflow-x: hidden;
+      touch-action: pan-y;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+      overflow-x: hidden;
+      touch-action: pan-y;
+    @apply bg-dark text-light antialiased;
+    font-family: var(--font-body);
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: var(--font-heading);
+  }
+
+  ::selection {
+    @apply bg-primary/30;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-secondary;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary;
+}
+.marquee {
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.marquee::before,
+.marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  z-index: 2
+}
+
+
+
+.track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: marquee 35s linear infinite
+}
+
+.reverse .track {
+  display : none;
+  animation-direction: reverse
+}
+
+.marquee:hover .track {
+  animation-play-state: paused
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding: 1rem 1.4rem;
+  border-radius: 15px;
+  background: #faf7f1;
+  backdrop-filter: blur(14px);
+  border: 1px solid grey;
+  color: black;
+  min-width: max-content;
+  transition: .35s;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent, rgba(254, 66, 77, .12), transparent);
+  transform: translateX(-120%);
+  transition: .7s;
+}
+
+.card:hover::before {
+  transform: translateX(120%)
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+ 
+  box-shadow: 0 0 35px rgba(254, 66, 77, .15);
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+@keyframes scan {
+
+    from {
+        transform: translateX(-150%);
+    }
+
+    to {
+        transform: translateX(900%);
+    }
+
+}
+
+.scan-line{
+    animation:scan 5s linear infinite;
+}
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0px) rotate(12deg);
+    }
+
+    50%{
+        transform:translateY(-12px) rotate(18deg);
+    }
+
+}
+
+.animate-float{
+    animation:float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed{
+    animation:float 8s ease-in-out infinite;
+}
+@keyframes progress {
+
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+
+}
+
+.animate-progress {
+
+  width: 100%;
+
+  animation: progress 5s linear;
+
+}
+
+
+@keyframes marqueee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marqueee {
+  animation: marquee 30s linear infinite;
+}
+
+.marqueee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeUp {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes marqueeDown {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+.marquee-up {
+  animation: marqueeUp 36s linear infinite;
+}
+
+.marquee-down {
+  animation: marqueeDown 36s linear infinite;
+}
+
+.marquee-up:hover,
+.marquee-down:hover {
+  animation-play-state: paused;
+}
