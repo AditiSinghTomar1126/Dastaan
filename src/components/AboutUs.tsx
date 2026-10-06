@@ -28,8 +28,8 @@ function useReveal<T extends HTMLElement>() {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-medium uppercase tracking-[0.3em] text-primary">
-      <span className="h-px w-8 bg-[#e07a3c]/50" />
+    <span className="inline-flex items-center gap-2 py-5 text-xs font-medium uppercase tracking-[0.3em] text-primary">
+      <span className="h-px w-8 bg-primary" />
       {children}
     </span>
   );

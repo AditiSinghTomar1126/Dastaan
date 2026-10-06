@@ -64,11 +64,11 @@ export default function Navbar() {
             alt="Dastaan"
             width={200}
             height={20}
-            className=" w-[150px] lg:w-[200px] lg:px-5"
+            className=" w-[150px] lg:w-[200px] lg:px-2 md:ml-10"
           />
         </Link>
         {/* Desktop Navigation */}
-        <div className="bg-light border border-light rounded-full px-4 py-3 ">
+        <div className="bg-light hidden md:flex md:border-light md:rounded-full md:px-4 md:py-3 ">
   
 
         <ul className="hidden items-center gap-5 lg:flex ">

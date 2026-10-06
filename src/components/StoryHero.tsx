@@ -67,7 +67,7 @@ export default function StoryHero() {
       {/* Soft accent glow */}
       <div
         className="pointer-events-none absolute -top-24 left-1/4 h-72 w-72 rounded-full opacity-15 blur-3xl"
-        style={{ background: 'radial-gradient(circle, #C66B3D, transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, var(--primary), transparent 70%)' }}
         aria-hidden
       />
 
@@ -104,8 +104,8 @@ export default function StoryHero() {
             }`}
             style={{ transitionDelay: '360ms' }}
           >
-            
-           
+
+
             </div>
             <div className="py-4">
              <button className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 sm:w-auto">
@@ -119,16 +119,16 @@ export default function StoryHero() {
          </div>         
            <div className="lg:pt-40 flex items-center gap-14">
               <div>
-                <p className="font-display text-4xl font-semibold text-primary">15+</p>
+                <p className="font-display text-3xl md:text-4xl font-semibold text-primary">15+</p>
                 <span className="text-xs  tracking-[0.2em] text-stone-500"> &nbsp;Years of craft</span>
               </div>
               
               <div>
-                <p className="font-display text-4xl font-semibold text-primary">40+</p>
+                <p className="font-display text-3xl md:text-4xl font-semibold text-primary">40+</p>
                 <span className="text-xs tracking-[0.2em] text-stone-500">&nbsp;Family recipes</span>
               </div>
                <div>
-                <p className="font-display text-4xl font-semibold text-primary">100%</p>
+                <p className="font-display text-3xl md:text-4xl font-semibold text-primary">100%</p>
                 <span className="text-xs tracking-[0.2em] text-stone-500">&nbsp;Fresh</span>
               </div>
             </div>
