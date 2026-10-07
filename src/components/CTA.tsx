@@ -108,21 +108,22 @@ export default function CTA() {
           }`}
           style={{ transitionDelay: '360ms' }}
         >
-          <button
-            onClick={scrollToBooking}
+          <a
+          href="https://wa.me/919762117170?text=Hi%20ATNexus!%20%F0%9F%91%8B%0A%0AI'm%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20my%20project.%0A%0ALooking%20forward%20to%20hearing%20from%20you."
+      
             className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-4 text-base font-medium text-white shadow-lg shadow-primary/30 transition-all duration-300  hover:shadow-xl hover:shadow-primary/40 hover:-translate-y-0.5 active:translate-y-0 sm:w-auto"
           >
             <CalendarHeart className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
             Book a Table
-          </button>
+          </a>
 
-          <button
-            
+          <a
+            href = "/menu"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-full border border-primary bg-white/5 px-8 py-4 text-base font-medium text-light backdrop-blur-sm transition-all duration-300 hover:border-primary hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0 sm:w-auto"
           >
             <MessageCircle className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
             Explore Menu
-          </button>
+          </a>
         </div>
       </div>
     </section>

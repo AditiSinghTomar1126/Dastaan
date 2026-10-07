@@ -159,9 +159,10 @@ export default function Hero() {
               justify-center
               self-end
               overflow-hidden
-              sm:min-h-[55vw]
+              sm:min-h-[75vw]
               lg:min-h-[48vw]
               lg:mt-20
+          
             "
           >
             <img
@@ -176,7 +177,7 @@ export default function Hero() {
                 w-auto
                 max-w-[115%]
                 object-contain
-                sm:h-[65vw]
+                sm:h-[75vw]
                 sm:max-w-full
                 lg:h-[88vw]
               "
