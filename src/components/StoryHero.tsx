@@ -108,14 +108,14 @@ export default function StoryHero() {
 
             </div>
             <div className="py-4">
-             <button className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 sm:w-auto">
+             <a href="/order" className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 sm:w-auto">
                 Order now
 
                 <ArrowUpRight
                   size={19}
                   className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
-              </button>
+              </a>
          </div>         
            <div className="lg:pt-40 flex items-center gap-14">
               <div>

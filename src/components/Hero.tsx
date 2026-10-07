@@ -9,26 +9,29 @@ import {
 } from "lucide-react";
 
 const heroimg = "/heroimg.png";
+const foodimg1 = "https://images.pexels.com/photos/34270741/pexels-photo-34270741.jpeg?auto=compress&cs=tinysrgb&w=800";
 
-const navItems = ["Home", "Menu", "Features", "Reviews", "Contact"];
+const foodimg2 = "https://images.pexels.com/photos/28674566/pexels-photo-28674566.jpeg?auto=compress&cs=tinysrgb&w=800";
+
+const foodimg3 = "https://images.pexels.com/photos/12669168/pexels-photo-12669168.jpeg?auto=compress&cs=tinysrgb&w=800";
 
 const foodCards = [
   {
     name: "Smoky Bloom",
     type: "Smoked mushrooms",
-    price: "$4.39",
+    price: "₹ 120",
     color: "bg-[#ff7518]",
   },
   {
     name: "Fried chicken",
     type: "Crispy & golden",
-    price: "$5.20",
+    price: "₹ 150",
     color: "bg-[#ffd9d2]",
   },
   {
     name: "Hot Dogs",
     type: "Loaded & juicy",
-    price: "$4.89",
+    price: "₹ 259",
     color: "bg-[#ffb7a8]",
   },
 ];
@@ -74,7 +77,7 @@ export default function Hero() {
         >
 
           {/* TEXT CONTENT */}
-          <div className="relative z-10 max-w-[650px] self-center pt-3 lg:pt-8">
+          <div className="relative z-10 max-w-[650px] self-center pt-12">
 
             <SectionLabel>dastaan</SectionLabel>
 
@@ -123,23 +126,24 @@ export default function Hero() {
                 sm:flex-row
               "
             >
-              <button className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 sm:w-auto">
-                Order now
+            
+              <a href="/order" className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-primary px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 sm:w-auto">
+                Order Now
 
                 <ArrowUpRight
                   size={19}
                   className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
-              </button>
+              </a>
 
-              <button className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/60 px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-primary sm:w-auto">
-                Explore menu
+              <a href="/menu" className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/60 px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:border-primary sm:w-auto">
+                Explore Menu
 
                 <ArrowUpRight
                   size={19}
                   className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 />
-              </button>
+              </a>
             </div>
 
             <div className="mt-10 flex items-center gap-4"></div>
@@ -203,22 +207,22 @@ export default function Hero() {
             >
               <div className="relative h-24 overflow-hidden rounded-[17px] bg-[#ff7518]">
                 <img
-                  src={heroimg}
-                  alt="Smoky Bloom burger"
+                  src={foodimg1}
+                  alt="Pani Puri"
                   className="h-full w-full scale-125 object-cover object-center"
                 />
               </div>
 
               <p className="mt-2 text-base font-bold">
-                Smoky Bloom
+                Pani Puri
               </p>
 
               <p className="text-[11px] text-black/50">
-                Smoked mushrooms
+                Spicy & tangy
               </p>
 
               <div className="mt-2 flex items-center justify-between">
-                <strong className="text-lg">$4.39</strong>
+                <strong className="text-lg"> ₹ 120 </strong>
 
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#171719] text-white">
                   <ArrowUpRight size={14} />
@@ -227,7 +231,7 @@ export default function Hero() {
             </div>
 
             {/* RIGHT FOOD CARDS
-                Already hidden on mobile */}
+               hidden on mobile */}
             <div className="absolute bottom-[5%] right-[2%] z-20 hidden w-[380px] items-end gap-2 sm:flex">
 
               <button
@@ -250,7 +254,7 @@ export default function Hero() {
                     >
                       <div className={`h-24 ${card.color}`}>
                         <img
-                          src={heroimg}
+                          src={foodimg2}
                           alt={card.name}
                           className="h-full w-full object-cover mix-blend-multiply"
                         />

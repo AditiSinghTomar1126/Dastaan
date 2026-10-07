@@ -43,7 +43,7 @@ function OurStory() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="grid items-stretch gap-0 md:grid-cols-2">
           {/* Image — exactly 50% */}
-          <div className="relative max-h-[400px] overflow-hidden md:max-h-[640px] "
+          <div className="relative max-h-[440px] overflow-hidden md:max-h-[640px] "
 
             style={{
               borderRadius: "clamp(100px, 16vw, 220px) 0 clamp(100px, 16vw, 220px) 0",
@@ -63,7 +63,7 @@ function OurStory() {
           </div>
 
           {/* Text — exactly 50% */}
-          <div className="flex flex-col justify-center px-6 py-0 md:px-16 md:py-0">
+          <div className="flex flex-col justify-center px-6 py-12 md:px-16 md:py-0">
             <SectionLabel>Our Story</SectionLabel>
             <h2 className="font-display mt-6 text-4xl font-medium leading-tight text-[#1a1614] sm:text-5xl">
               Where Our Story Began

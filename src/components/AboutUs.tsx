@@ -43,7 +43,7 @@ function MeetTheChef() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="grid items-stretch gap-0 md:grid-cols-2">
           {/* Text side */}
-          <div className="order-2 flex flex-col justify-center px-6 py-0 md:order-1 md:px-16 md:py-0">
+          <div className="order-2 flex flex-col justify-center px-6 py-12 md:order-1 md:px-16 md:py-0">
             <SectionLabel>Meet the Chef</SectionLabel>
             <h2 className="font-display mt-6 text-4xl font-medium leading-tight text-light sm:text-5xl">
               Chef Aarav Mehta

@@ -12,7 +12,7 @@ import "./globals.css";
 
 import Navbar from "@/components/Navbar";
 
-import StartProject from "@/components/StartProject";
+import CTA from "@/components/CTA";
 
 import Footer from "@/components/Footer";
 import Whatsapp from "@/components/Whatsapp";
@@ -40,7 +40,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
        
-        <StartProject/>
+        <CTA/>
         <Footer />
         <Whatsapp/>
       </body>

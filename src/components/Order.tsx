@@ -99,7 +99,8 @@ export default function OrderNow() {
 
           {/* Pickup */}
           <a
-            href={PICKUP_URL}
+          
+       href="https://wa.me/919762117170?text=Hi%20ATNexus!%20%F0%9F%91%8B%0A%0AI'm%20interested%20in%20your%20services%20and%20would%20like%20to%20discuss%20my%20project.%0A%0ALooking%20forward%20to%20hearing%20from%20you."
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-4 rounded-2xl border border-primary/10 bg-transparent p-8 text-center transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-1"
@@ -125,33 +126,8 @@ export default function OrderNow() {
           }`}
           style={{ transitionDelay: '400ms' }}
         >
-          <button
-            onClick={() => scrollTo('menu')}
-            className="group inline-flex items-center gap-2 text-sm font-medium text-stone-300 transition-colors duration-300 hover:text-primary"
-          >
-            <BookOpen className="h-4 w-4" />
-            View Menu
-          </button>
+        
 
-          <span className="hidden h-4 w-px bg-white/10 sm:inline-block" />
-
-          <button
-            onClick={() => scrollTo('gallery')}
-            className="group inline-flex items-center gap-2 text-sm font-medium text-stone-300 transition-colors duration-300 hover:text-primary"
-          >
-            <Images className="h-4 w-4" />
-            Explore Gallery
-          </button>
-
-          <span className="hidden h-4 w-px bg-white/10 sm:inline-block" />
-
-          <button
-            onClick={() => scrollTo('order-booking')}
-            className="group inline-flex items-center gap-2 text-sm font-medium text-stone-300 transition-colors duration-300 hover:text-primary"
-          >
-            <CalendarHeart className="h-4 w-4" />
-            Take Away
-          </button>
         </div>
       </div>
     </section>
