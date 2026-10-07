@@ -77,7 +77,7 @@ export default function Hero() {
         >
 
           {/* TEXT CONTENT */}
-          <div className="relative z-10 max-w-[650px] self-center pt-12">
+          <div className="relative z-10 max-w-[650px] self-center  pt-24 md:pt-12">
 
             <SectionLabel>dastaan</SectionLabel>
 

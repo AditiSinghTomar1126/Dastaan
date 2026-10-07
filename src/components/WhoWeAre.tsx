@@ -43,7 +43,7 @@ function OurStory() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <div className="grid items-stretch gap-0 md:grid-cols-2">
           {/* Image — exactly 50% */}
-          <div className="relative max-h-[440px] overflow-hidden md:max-h-[640px] "
+          <div className="relative max-h-[440px] min-h-[95vw] overflow-hidden md:max-h-[640px] "
 
             style={{
               borderRadius: "clamp(100px, 16vw, 220px) 0 clamp(100px, 16vw, 220px) 0",
